@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/myborder"
+            android:paddingLeft="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="@drawable/ic_search_black_24dp"
+            android:onClick="load"
+            android:id="@+id/search"
+            />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:id="@+id/wview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/ic_facebook_logo_button"
+            android:onClick="load"
+            android:id="@+id/fb"
+            />
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/ic_google_plus_logo_button"
+            android:onClick="load"
+            android:id="@+id/google"
+            />
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/ic_youtube_logotype"
+            android:onClick="load"
+            android:id="@+id/youtube"
+            />
+
+        <Button
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/ic_html_5_logo"
+            android:onClick="load"
+            android:id="@+id/html5"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
